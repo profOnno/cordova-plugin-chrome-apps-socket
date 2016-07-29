@@ -11,7 +11,9 @@ var ChromeSocket = {
         // start proxy ws-socket
         // connect to proxy
         var socketInfo = { "socketId": "bliebla" };
-        return success(socketInfo); //run callback
+        // nextline doesn't seem to work???
+//        return success(socketInfo); //run callback
+        return success("bliebla"); //run callback
     },
 
     connect: function (success, error, options) {
