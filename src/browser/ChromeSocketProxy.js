@@ -10,11 +10,13 @@ var ChromeSocket = {
         console.log(JSON.stringify(options));
         // start proxy ws-socket
         // connect to proxy
-        return success(); //run callback
+        return success("bliebla"); //run callback
     },
 
-    connect: function () {
+    connect: function (succes, error, options) {
         console.log("connect called");
+        console.log(JSON.stringify(options));
+        return success();
     },
 
     write: function () {
