@@ -10,7 +10,8 @@ var ChromeSocket = {
         console.log(JSON.stringify(options));
         // start proxy ws-socket
         // connect to proxy
-        return success({ "socketId": "bliebla" }); //run callback
+        var socketInfo = { "socketId": "bliebla" };
+        return success(socketInfo); //run callback
     },
 
     connect: function (success, error, options) {
