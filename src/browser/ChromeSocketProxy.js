@@ -5,8 +5,9 @@
 
 var ChromeSocket = {
 
-    create: function (success, error) {
+    create: function (success, error, options) {
         console.log("create called");
+        console.log(JSON.stringify(options));
         // start proxy ws-socket
         // connect to proxy
         return success(); //run callback
