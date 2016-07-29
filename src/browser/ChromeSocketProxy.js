@@ -10,10 +10,10 @@ var ChromeSocket = {
         console.log(JSON.stringify(options));
         // start proxy ws-socket
         // connect to proxy
-        return success("bliebla"); //run callback
+        return success({ "socketId": "bliebla" }); //run callback
     },
 
-    connect: function (succes, error, options) {
+    connect: function (success, error, options) {
         console.log("connect called");
         console.log(JSON.stringify(options));
         return success();
@@ -26,7 +26,7 @@ var ChromeSocket = {
     read: function () {
         console.log("read called");
     }
-}
+};
 
 module.exports = ChromeSocket;
 require('cordova/exec/proxy').add('ChromeSocket', ChromeSocket);
