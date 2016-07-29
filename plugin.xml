@@ -46,9 +46,8 @@
   </platform>
   
   <platform name="browser">
-        <source-file src="src/browser/ChromeSocketProxy.js" />
-        <js-module src="src/browser/ChromeSocketProxy.js" name="ChromeSocket">
-            <clobbers target="chrome.socket"/>
+        <js-module src="src/browser/ChromeSocketProxy.js" name="ChromeSocketProxy">
+            <runs/>
         </js-module>
   </platform>
 </plugin>
