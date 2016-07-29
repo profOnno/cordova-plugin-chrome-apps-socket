@@ -47,7 +47,7 @@
     <platform name="browser">
         <source-file src="src/browser/ChromeSocketProxy.js" />
 
-    <config-file target="res/xml/config.xml" parent="/*">
+    <config-file target="res/xml/config.xml" parent="/widget">
       <feature name="ChromeSocket">
         <param name="browser-package" value="ChromeSocket"/>
       </feature>
