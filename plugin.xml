@@ -43,16 +43,12 @@
         <param name="ios-package" value="ChromeSocket"/>
       </feature>
     </config-file>
-  
-    <platform name="browser">
-        <source-file src="src/browser/ChromeSocketProxy.js" />
-
-    <config-file target="res/xml/config.xml" parent="/widget">
-      <feature name="ChromeSocket">
-        <param name="browser-package" value="ChromeSocket"/>
-      </feature>
-    </config-file>
   </platform>
-
- </platform>
+  
+  <platform name="browser">
+        <source-file src="src/browser/ChromeSocketProxy.js" />
+        <js-module src="src/browser/ChromeSocketProxy.js" name="ChromeSocket">
+            <clobbers target="chrome.socket"/>
+        </js-module>
+  </platform>
 </plugin>
