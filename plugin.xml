@@ -49,6 +49,6 @@
         <js-module src="src/browser/ChromeSocketProxy.js" name="ChromeSocketProxy">
             <runs/>
         </js-module>
-        <hook type="before_serve" src="src/browser/ProxyServerHook.js"/>
+        <hook type="before_run" src="src/browser/ProxyServerHook.js"/>
   </platform>
 </plugin>
