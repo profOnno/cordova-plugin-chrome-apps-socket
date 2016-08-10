@@ -6,7 +6,7 @@ var ws = null;
 var ChromeSocket = {
 
     create: function (success, error, options) {
-       /* 
+        
         function postit(callback) {
             var xhttp = new XMLHttpRequest();
 
@@ -19,14 +19,14 @@ var ChromeSocket = {
             xhttp.open("POST", "http://localhost:8001/", true); // TODO add cors for 127.0.0.1?
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send(JSON.stringify({ action: "create" }));
-        };
-        */
+        }
+        
 
         console.log("create called");
         console.log(JSON.stringify(options));
-    //    postit(function (res){
-            return success("aargh");
-     //   });
+        postit(function (res){
+            return success("res");
+        });
 
             // start proxy ws-socket
             // connect to proxy
@@ -34,7 +34,6 @@ var ChromeSocket = {
             // nextline doesn't seem to work???
     //        return success(socketInfo); //run callback
 
-        }
 
     },
 
