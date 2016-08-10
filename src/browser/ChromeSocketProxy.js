@@ -6,7 +6,7 @@ var ws = null;
 var ChromeSocket = {
 
     create: function (success, error, options) {
-        
+       /* 
         function postit(callback) {
             var xhttp = new XMLHttpRequest();
 
@@ -20,12 +20,13 @@ var ChromeSocket = {
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send(JSON.stringify({ action: "create" }));
         };
+        */
 
         console.log("create called");
         console.log(JSON.stringify(options));
-        postit(function (res){
-            return success(res)
-        });
+    //    postit(function (res){
+            return success("aargh");
+     //   });
 
             // start proxy ws-socket
             // connect to proxy
