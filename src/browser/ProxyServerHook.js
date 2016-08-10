@@ -18,7 +18,7 @@ module.exports = function (context) {
         res.header('Access-Control-Allow-Headers', 'Content-Type');
 
         next();
-    }
+    };
 
     console.log("starting ProxyServerHook");
 
@@ -31,7 +31,7 @@ module.exports = function (context) {
 /*        var msg = "You should not be sending an html request...<br>try something like this:<br><br>";
             msg += "<code>curl -H \"Content-Type: application/json\" -X POST -d '{\"action\": \"create\"}' http://localhost:8001</code>";
             */
-        var msg = '<!DOCTYPE html>\n'
+        var msg = '<!DOCTYPE html>\n';
             msg += '<html>\n';
         msg += '<body>\n';
 
